@@ -1,0 +1,42 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
+    font-size: 14px;
+    color: #212121;
+}
+.header {
+   background: #FFFFFF;
+}
+.navigation,
+.link {
+    color: #212121;
+}
+.navigation,
+.link:hover {
+    color: #2196F3;
+}
+.adress,
+.link-adress {
+    color: #757575;
+}
+.adress,
+.link-adress:hover {
+    color: #2196F3;
+}
+.logo {
+    color: #000000;
+
+
+}
+.logo-web {
+    color: #2196F3;
+}
+
+.filtr-pf {
+    cursor: pointer;
+}
+.filtr-pf:hover {
+    background: #2196F3;
+    color: #FFFFFF;
+}
