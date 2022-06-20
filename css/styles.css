@@ -10,7 +10,7 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--text-color-gray);
     letter-spacing: 0.03em;
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
 /* header */
@@ -101,14 +101,14 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--accent-color);
+    color: var(--white-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #188ce8;
-    color: #ffffff;
+    color: var(--white-color);
     cursor: pointer;
 }
 
@@ -237,13 +237,18 @@ body {
     line-height: 1.62;
     background-color: #f5f4fa;
     color: var(--text-color-black);
+    cursor: pointer;
 }
 
-.portfolio-button active:hover,
+.portfolio-button:hover,
 .portfolio-button:focus {
-    background-color: #2196f3;
-    color: #ffffff;
-    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.portfolio-button.active {
+    background-color: var(--accent-color);
+    color: var(--white-color);
 }
 
 /* Portfolio plates */
@@ -266,6 +271,7 @@ body {
     line-height: 1.87;
     color: var(--text-color-gray);
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -279,11 +285,8 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .address-link-ad {
-    color: #ffffff;
+    color: var(--white-color);
     text-decoration: none;
-}
-.address-link-ad:hover,
-.address-link:focus {
-    color: var(--accent-color);
 }
