@@ -279,7 +279,11 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.address-item a {
+.address-link-ad {
     color: #ffffff;
     text-decoration: none;
+}
+.address-link-ad:hover,
+.address-link:focus {
+    color: var(--accent-color);
 }
