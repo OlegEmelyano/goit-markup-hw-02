@@ -168,6 +168,8 @@ html {
     list-style: none;
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-bottom: auto;
+    margin-top: auto;
     display: flex;
 }
 
