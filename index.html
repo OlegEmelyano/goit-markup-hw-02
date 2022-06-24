@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="menu-nav">
+        <nav class="container menu-nav">
             <a class="header-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
         <ul class="nav-list">
             <li class="nav-item">
@@ -38,12 +38,12 @@
     </header>
     
     <main class="main">
-    
-        <section class="hero">
+     <section class="hero">
          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
          <button type="button" class="hero-btn">Заказать услугу</button>
      </section>
      <section class="details-section">
+        <div class="container">
          <h2 class="visually-hidden">Преимущества компании</h2>
          <Ul class="details-list">
              <li class="details-item">
@@ -63,20 +63,23 @@
                 <p class="details-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
          </Ul>
+           </div>
      </section>
      <section class="work-section">
+        <div class="container">
          <h2 class="section-title">Чем мы занимаемся</h2>
          <ul class="work-list">
             <li class="work-item">
-                <img src="./images/box1.jpg" width="370" alt="создание сайтов">
+                <img src="./images/box1.jpg" width="370" height="294" alt="создание сайтов">
             </li>
             <li class="work-item">
-                <img src="./images/box2.jpg" width="370" alt="создание приложений">
+                <img src="./images/box2.jpg" width="370" height="294" alt="создание приложений">
             </li>
             <li class="work-item">
-                <img src="./images/box3.jpg" width="370" alt="дизайн сайтов">
+                <img src="./images/box3.jpg" width="370" height="294" alt="дизайн сайтов">
             </li>
          </ul>
+        </div>
      </section>
      <section class="team-section">
          <h2 class="section-title">Наша команда</h2>
@@ -105,14 +108,21 @@
      </section>
     </main>
     <footer class="footer">
-        <a class="footer-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <address class="address">
-            <ul class="address-list">
-            <li class="address-item"><a class="address-link-ad" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer"">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="address-item"><a class="address-link" href="mailto:info@example.com">info@example.com</a></li>
-            <li class="address-item"><a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="footer-info">
+            <div class="container">
+                <a class="footer-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-item"><a class="address-link-ad" href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                                target="_blank" rel="noopener nofollow noreferrer"">г. Киев, пр-т Леси Украинки, 26</a></li>
+                                    <li class=" address-item"><a class="address-link"
+                                    href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="address-item"><a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+            
     </footer>
 </body>
 </html>
