@@ -263,7 +263,9 @@ html {
     background-color: #2f303a;
 }
 
-.footer-info {
+.footer-info,
+.footer-info,
+.address-list {
         margin-left: auto;
         margin-right: auto;
         width: 1200px;
