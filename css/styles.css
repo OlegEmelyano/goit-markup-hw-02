@@ -18,9 +18,46 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
     box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+
+address {
+    font-style: normal;
 }
 
 /* header */
@@ -106,20 +143,19 @@ html {
 }
 
 .hero-title {
+    display: block;
+    width: 696px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    width: 696px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-
+    
     color: var(--white-color);
 }
 
@@ -259,6 +295,7 @@ html {
 
 .footer {
     height: 252px;
+    padding-top: 60px;
 
     background-color: #2f303a;
 }
@@ -270,9 +307,6 @@ html {
         margin-right: auto;
         width: 1200px;
         padding: 0 15px;
-        padding-top: 60px;
-        display: flex;
-        flex-direction: column;
 }
 
 .container-footer {
