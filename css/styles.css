@@ -147,6 +147,8 @@ address {
     align-items: center;
 }
 
+
+
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -159,6 +161,7 @@ address {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
 
     color: var(--text-color-gray);
 }
