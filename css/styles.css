@@ -46,6 +46,8 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 /* Свойства для корректного отображения картинок */
@@ -154,13 +156,14 @@ address {
 }
 
 .header-address {
-    display: block;
+    display: inline-flex;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    align-items: center;
     
 
     color: var(--text-color-gray);
@@ -171,7 +174,18 @@ address {
     color: var(--accent-color);
 }
 
+.mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 
+.tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
 
 
         /* main */
@@ -182,6 +196,17 @@ address {
     padding: 200px 0;
     text-align: center;
     background-color: #2f303a;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--absolute-black);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/studio/section-hero/hero-Img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -254,6 +279,20 @@ address {
 
 .details-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.details-icons {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+}
+
+.details-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .details-title {
@@ -342,6 +381,41 @@ address {
     text-align: center;
 
     color: var(--text-color-gray);
+}
+
+.social {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.social .social-icon + .social-icon {
+    margin-left: 10px;
+}
+
+.social a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: #afb1b8;
+}
+
+.social a:hover,
+.social a:focus {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    fill: var(--white-color);
+}
+
+.si {
+    width: 20px;
+    height: 20px;
 }
 
 
