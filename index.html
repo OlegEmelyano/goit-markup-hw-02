@@ -71,7 +71,7 @@
             <h1 class="hero-title">
                 Эффективные решения для вашего бизнеса
             </h1>
-                <button type="button" class="hero-btn">
+                <button data-modal-open type="button" class="hero-btn">
                     Заказать услугу
                 </button>
        </div>
@@ -145,15 +145,30 @@
                 Чем мы занимаемся
             </h2>
                 <ul class="work-list">
+                    <div class="work-thumb">
                     <li class="work-item">
-                        <img src="./images/studio/work-section/box1.jpg" width="370" height="294" alt="создание сайтов">
+                        <img src="./images/studio/work-section/box1.jpg" width="370" height="294" alt="создание сайтов"> 
+                        <p class="work-text">
+                            Десктопные приложения
+                        </p>
                     </li>
+                    </div>
+                    <div class="work-thumb">
                     <li class="work-item">
                         <img src="./images/studio/work-section/box2.jpg" width="370" height="294" alt="создание приложений">
+                        <p class="work-text">
+                            Мобильные приложения
+                        </p>
                     </li>
+                    </div>
+                    <div class="work-thumb">
                     <li class="work-item">
                         <img src="./images/studio/work-section/box3.jpg" width="370" height="294" alt="дизайн сайтов">
+                        <p class="work-text">
+                            Дизайнерские решения
+                        </p>
                     </li>
+                    </div>
                 </ul>
          </div>
     </section>
@@ -446,5 +461,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
