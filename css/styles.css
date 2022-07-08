@@ -4,6 +4,7 @@
     --text-color-gray: #757575;
     --white-color: #ffffff;
     --absolute-black: #000000;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -134,7 +135,25 @@ address {
     padding: 32px 0;
     display: block;
 
+    transition: color 250ms var(--timing-function);
+
     color: var(--text-color-black);
+}
+
+.current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+     width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--accent-color);
 }
 
 .nav-link:hover,
@@ -164,6 +183,8 @@ address {
     letter-spacing: 0.02em;
     text-decoration: none;
     align-items: center;
+
+    transition: color 250ms var(--timing-function);
     
 
     color: var(--text-color-gray);
@@ -231,6 +252,9 @@ address {
     line-height: 1.87;
     letter-spacing: 0.06em;
     border: none;
+
+    transition: 
+    background-color 250ms var(--timing-function);
 
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -427,12 +451,18 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    transition: 
+    background-color 250ms var(--timing-function), 
+    color 250ms var(--timing-function);
+    
     fill: #afb1b8;
 }
 
 .social a:hover,
 .social a:focus {
     border-radius: 50%;
+
     background-color: var(--accent-color);
     color: var(--white-color);
     fill: var(--white-color);
@@ -480,9 +510,14 @@ address {
     height: 92px;
     align-items: center;
     justify-content: center;
-    fill: #afb1b8;
-    border: 1px solid #afb1b8;
     border-radius: 4px;
+    
+    transition: 
+    border 250ms var(--timing-function), 
+    fill 250ms var(--timing-function);
+    
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
 }
 
 .client-section .client-item +.client-item {
@@ -543,6 +578,9 @@ address {
 .address-link {
     text-decoration: none;
 
+    transition: 
+    color 250ms var(--timing-function);
+
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -573,6 +611,11 @@ address {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
+    transition: 
+    background-color 250ms var(--timing-function), 
+    fill 250ms var(--timing-function);
+
     fill: var(--white-color);
 }
 
@@ -637,6 +680,11 @@ address {
     border-radius: 4px;
     padding: 6px 22px;
 
+    transition: 
+    background-color 250ms var(--timing-function), 
+    color 250ms var(--timing-function), 
+    box-shadow 250ms var(--timing-function);
+
     background-color: #f5f4fa;
     color: var(--text-color-black);
 }
@@ -684,6 +732,10 @@ address {
     color: var(--text-color-black);
 }
 
+.portfolio-links {
+    
+}
+
 .portfolio-list .portfolio-links:hover,
 .portfolio-list .portfolio-links:focus {
     display: block;
@@ -694,6 +746,30 @@ address {
     cursor: pointer;
 }
 
+.portfolio-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+    
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+}
 
 .card-thumb {
     padding: 20px 24px;
