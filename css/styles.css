@@ -270,6 +270,74 @@ address {
     cursor: pointer;
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transition: 
+    opacity 250ms var(--timing-function), 
+    visibility 250ms var(--timing-function);
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-function);
+
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    
+    background-color: var(--white-color);
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: fill 250ms var(--timing-function);
+
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button:hover {
+    fill: var(--accent-color);
+}
+
+.close-button-icon {
+    width: 20px;
+    height: 20px;
+}
 
 
 
@@ -372,16 +440,18 @@ address {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 370px;
+    width: 100%;
     height: 70px;
     padding: 27px;
-    z-index: 1;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: var(--white-color);
     background: rgba(47, 48, 58, 0.8);
 }
@@ -499,10 +569,6 @@ address {
     border: 1px solid var(--accent-color);
 }
 
-.client-item {
-
-}
-
 
 .client-section a {
     display: flex;
@@ -520,10 +586,9 @@ address {
     fill: #afb1b8;
 }
 
-.client-section .client-item +.client-item {
+.client-section .client-item {
     margin-left: 30px;
 }
-
 
 
 
@@ -732,9 +797,6 @@ address {
     color: var(--text-color-black);
 }
 
-.portfolio-links {
-    
-}
 
 .portfolio-list .portfolio-links:hover,
 .portfolio-list .portfolio-links:focus {
@@ -764,11 +826,15 @@ address {
     line-height: 1.56;
     letter-spacing: 0.03em;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
-    
+
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    transform: translateY(0);
 }
 
 .card-thumb {
