@@ -709,6 +709,9 @@ address {
     text-transform: uppercase;
 }
 
+.footer .container-newsletter {
+    margin-left: 93px;
+}
 
 
             /* portfolioHTML */
@@ -806,6 +809,11 @@ address {
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+}
+
+.portfolio-links {
+    transition: box-shadow 250ms;
+    transition-timing-function: var(--timing-function);
 }
 
 .portfolio-content {
