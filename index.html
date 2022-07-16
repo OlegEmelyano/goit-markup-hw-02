@@ -465,8 +465,17 @@
             </ul>
         </div>
         <div class="container-newsletter">
-            <h3 class="social-text">Подпишитесь на рассылку</h3>
-        
+            <p class="social-text">Подпишитесь на рассылку</p>
+        <form class="form-sending" name="subscription" autocomplete="on">
+            <label for="subscription-email"></label>
+            <input class="form-email" type="email" name="subscription-email" id="subscription-email" placeholder="E-mail" required>
+            <button class="button-form" type="button-sending">
+                Подписаться
+            <svg class="button-send">
+                <user href="./images/studio/symbol-defs.svg#icon-icon-send-f" width="24px" height="24px"></user>
+            </svg>      
+            </button>
+        </form>
         </div>
     </div>
 </footer>
