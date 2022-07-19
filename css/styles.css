@@ -307,7 +307,6 @@ address {
     transition: transform 250ms var(--timing-function);
 
     width: 528px;
-    height: 581px;
     border-radius: 4px;
     
     background-color: var(--white-color);
@@ -319,11 +318,11 @@ address {
 
 .close-button {
     position: absolute;
-    right: 0;
+    right: 8px;
+    top: 8px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -335,6 +334,7 @@ address {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.close-button:focus,
 .close-button:hover {
     fill: var(--accent-color);
 }
@@ -347,10 +347,8 @@ address {
 .form-modal {
     display: flex;
     align-items: center;
-    width: 448px;
-    height: 501px;
     flex-direction: column;
-    margin: 40px 40px;
+    padding: 40px;
 }
 
 .form-title {
@@ -366,6 +364,7 @@ address {
 .form-group {
     width: 100%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .label-checkbox {
@@ -422,16 +421,10 @@ address {
 
 .form-lable {
     display: block;
-    width: 25px;
-    height: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: var(--text-color-gray);
-    margin-bottom: 4px
 }
 
 .form-input {
@@ -439,11 +432,11 @@ address {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 10px;
     cursor: pointer;
     padding-left: 42px;
     transition: border 250ms var(--timing-function);
     outline: none;
+    margin-top: 5px;
 }
 
 .form-input:focus-within,
@@ -461,7 +454,6 @@ address {
     margin-left: 12px;
     width: 18px;
     height: 18px;
-    transform: translateY(-25%);
     transition: fill 250ms var(--timing-function);
 }
 
@@ -474,6 +466,7 @@ address {
     margin-bottom: 20px;
     transition: border 250ms var(--timing-function);
     outline: none;
+    margin-top: 5px;
 }
 
 textarea {
@@ -910,7 +903,7 @@ textarea {
 
 .form-sending {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 20px;
 }
 
@@ -922,9 +915,10 @@ textarea {
     padding: 0;
     padding-left: 16px;
     margin-right: 12px;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--white-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);

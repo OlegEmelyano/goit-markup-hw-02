@@ -464,12 +464,13 @@
                 </li>
             </ul>
         </div>
-        <div class="container-newsletter">
-            <p class="social-text">Подпишитесь на рассылку</p>
+        <div class="container-newsletter">    
         <form class="form-sending" name="subscription" autocomplete="on">
-            <label class="visually" for="subscription-email"></label>
-            <input class="form-email" type="email" name="subscription-email" id="subscription-email" placeholder="E-mail" required>
-            <button class="button-form" type="button-sending">Подписаться
+            <label class="visually" for="subscription-email">
+                <p class="social-text">Подпишитесь на рассылку</p>
+                <input class="form-email" type="email" name="subscription-email" id="subscription-email" placeholder="E-mail" required>
+            </label>
+            <button class="button-form" type="submit">Подписаться
             <svg class="button-send">
                 <use href="./images/studio/symbol-defs.svg#icon-icon-send-f"></use>
             </svg>
@@ -490,29 +491,37 @@
             <form class="form-modal" name="transfer">
                 <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
                 <div class="form-group">
-                    <label class="form-lable" for="username">Имя</label>
-                    <input class="form-input" type="text" name="username" required="" autofocus="">
+                    <label class="form-lable" for="username">
+                        Имя
+                    <input class="form-input" id="username" type="text" name="username" required="" autofocus="">
+                    </label>
                     <svg class="modal-icon">
                         <use href="./images/studio/symbol-defs.svg#icon-person-black-modal" width="18" height="18"></use>
                     </svg>
                 </div>
                 <div class="form-group">
-                    <label class="form-lable" for="phone-number">Телефон</label>
-                    <input class="form-input" type="tel" name="phone-number" placeholder=" " required="">
+                    <label class="form-lable" for="phone-number">
+                        Телефон
+                    <input class="form-input" id="phone-number" type="tel" name="phone-number" placeholder=" " required="">
+                    </label>
                     <svg class="modal-icon">
                         <use href="./images/studio/symbol-defs.svg#icon-phone-black-modal" width="18" height="18"></use>
                     </svg>
                 </div>
                 <div class="form-group">
-                    <label class="form-lable" for="mail">Почта</label>
-                    <input class="form-input" type="email" name="mail" placeholder=" " required="">
+                    <label class="form-lable" for="mail">
+                        Почта
+                    <input class="form-input" id="mail" type="email" name="mail" placeholder=" " required="">
+                    </label>
                     <svg class="modal-icon">
                         <use href="./images/studio/symbol-defs.svg#icon-email-black-modal" width="18" height="18"></use>
                     </svg>
                 </div>
                 <div class="form-group">
-                    <label class="form-lable" for="notes">Комментарий</label>
-                    <textarea class="form-textarea" name="notes" placeholder="Введите текст"></textarea>
+                    <label class="form-lable" for="notes">
+                        Комментарий
+                    <textarea class="form-textarea" id="notes" name="notes" placeholder="Введите текст"></textarea>
+                    </label>
                 </div>
                 <label class="label-checkbox" for="conditions">
                     <input class="checkbox visually-hidden" type="checkbox" name="conditions" id="conditions" required/>
