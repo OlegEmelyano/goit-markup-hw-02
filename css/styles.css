@@ -440,7 +440,6 @@ address {
 }
 
 .form-input:focus-within,
-.form-input:hover,
 .form-input:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -463,10 +462,14 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
-    margin-bottom: 20px;
     transition: border 250ms var(--timing-function);
     outline: none;
     margin-top: 5px;
+}
+
+.form-textarea-group {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -514,12 +517,10 @@ textarea {
 }
 
 .form-group:focus-within > .modal-icon,
-.form-group:hover > .modal-icon,
 .form-group:focus > .modal-icon {
     fill: var(--accent-color);
 }
 
-.form-textarea:hover,
 .form-textarea:focus {
     border: 1px solid var(--accent-color);
 }
@@ -923,6 +924,8 @@ textarea {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    transition: filter 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 
 .button-form {
