@@ -1,0 +1,13 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--text-color-gray);
+    letter-spacing: 0.03em;
+    background-color: var(--white-color);
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
