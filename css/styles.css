@@ -934,7 +934,7 @@ textarea {
     align-items: center;
     justify-content: center;
     width: 200px;
-     height: 50px;
+    height: 50px;
     padding: 10px 28px;
     font-weight: 700;
     font-size: 16px;
@@ -977,13 +977,13 @@ textarea {
     /*portfolio-filter*/
 
 .btn-list {
-     margin-bottom: 50px;
-     display: flex;
-     justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-item:not(:last-child) {
-     margin-right: 8px;
+    margin-right: 8px;
 }
 
 .portfolio-button {
