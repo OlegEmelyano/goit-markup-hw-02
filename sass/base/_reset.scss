@@ -1,38 +1,29 @@
-/* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
+p,
+ul,
+li {
+    margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у списков (ul) */
-ul {
+ul,
+li {
     list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-/* Класс для обнуления базовых свойств у ссылок */
-a {
     text-decoration: none;
-    color: inherit;
-    margin: 0;
     padding: 0;
 }
 
-/* Свойства для корректного отображения картинок */
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* Свойства для обнуления курсива у address */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 address {
     font-style: normal;
