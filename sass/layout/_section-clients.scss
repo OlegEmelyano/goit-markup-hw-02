@@ -12,7 +12,9 @@
         height: 92px;
         align-items: center;
         justify-content: center;
+
         fill: var(--icons-primary-color);
+        
         transition: border 250ms var(--timing-function);
 
         &:hover,
